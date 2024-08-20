@@ -14,12 +14,10 @@ This repository is created to store different trained model and their results of
 ("n-Year"_ "StartDate" _ "End Date" _ "feature name"."file extension")
 ```
 
-### 5 Year Prediction Models
 
-1. <a href="/5 year Model/Close Feature/75/5Model_18_23_75.ipynb">5 year Model: Epoch 75 </a>
-
-2. <a href="/5 year Model/Close Feature/100/5Model_18_23_100.ipynb">5 year Model: Epoch 100 </a>
-
-3. <a href="/5 year Model/Close Feature/125/5Model_18_23_125.ipynb">5 year Model: Epoch 125 </a>
-
-4. <a href="/5 year Model/Close Feature/150/5Model_18_23_150.ipynb">5 year Model: Epoch 150 </a>
+| 5 year Model | 8 Year Model | 10 Year Model |
+|--------------|:-----:|-----------:|
+|<a href="/5 year Model/Close Feature/75/5Model_18_23_75.ipynb">Epoch 75 </a>   | <a href="/8 year Model/Close Feature/75/8model_15_23.ipynb">Epoch 75 </a>      |  <a href="/10 year Model/Close Feature/75/10Model_13_23_75.ipynb">Epoch 75 </a>  |
+|<a href="/5 year Model/Close Feature/100/5Model_18_23_100.ipynb">Epoch 100 </a>|  <a href="/8 year Model/Close Feature/100/8model_15_23_100.ipynb">Epoch 100 </a> | <a href="/10 year Model/Close Feature/100/10Model_13_23_100.ipynb">Epoch 100 </a>   |
+|<a href="/5 year Model/Close Feature/125/5Model_18_23_125.ipynb">Epoch 125 </a> |   <a href="/8 year Model/Close Feature/125/8model_15_23_125.ipynb">Epoch 125 </a>    |    <a href="/10 year Model/Close Feature/125/10Model_13_23_125.ipynb">Epoch 125 </a>       |
+|<a href="/5 year Model/Close Feature/150/5Model_18_23_150.ipynb">Epoch 150 </a> |  <a href="/8 year Model/Close Feature/150/8model_15_23_150.ipynb">Epoch 150 </a>     |    <a href="/10 year Model/Close Feature/150/10Model_13_23_150.ipynb">Epoch 150 </a>       |
