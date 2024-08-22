@@ -15,7 +15,7 @@ This repository is created to store different trained model and their results of
 ```
 
 
-## Model Details and Navigation
+## Model Details and Navigation (Without XGBoost)
 
 1. For Close Feature
 
@@ -34,3 +34,30 @@ This repository is created to store different trained model and their results of
 |<a href="/5 year Model/Open Feature/100/5Model_18_23_100_open.ipynb">Epoch 100 </a>|  <a href="/8 year Model/Open Feature/100/8Model_15_23_100_open.ipynb">Epoch 100 </a> | <a href="/10 year Model/Open Feature/100/10Model_13_23_100_open.ipynb">Epoch 100 </a>   |
 |<a href="/5 year Model/Open Feature/125/5Model_18_23_125_open.ipynb">Epoch 125 </a> |   <a href="/8 year Model/Open Feature/125/8Model_15_23_125_open.ipynb">Epoch 125 </a>    |    <a href="/10 year Model/Open Feature/125/10Model_13_23_125_open.ipynb">Epoch 125 </a>       |
 |<a href="/5 year Model/Open Feature/150/5Model_18_23_150_open.ipynb">Epoch 150 </a> |  <a href="/8 year Model/Open Feature/150/8Model_15_23_150_open.ipynb">Epoch 150 </a>     |    <a href="/10 year Model/Open Feature/150/10Model_13_23_150_open.ipynb">Epoch 150 </a> |
+
+
+
+```py
+from sklearn.model_selection import GridSearchCV
+
+# Define hyperparameter grid
+param_grid = {
+    'n_estimators': [50, 100, 200],
+    'max_depth': [3, 5, 7],
+    'learning_rate': [0.01, 0.1, 0.2]
+}
+
+# Create GridSearchCV object
+grid_search = GridSearchCV(estimator=model_xgb, param_grid=param_grid, cv=5)
+
+# Fit the grid search to the data
+grid_search.fit(lstm_features_train, y_train)
+
+# Get the best hyperparameters
+best_params = grid_search.best_params_
+print("Best Hyperparameters:", best_params)
+
+# Use the best model to make predictions
+best_model = grid_search.best_estimator_
+y_pred = best_model.predict(lstm_features_test)
+```
