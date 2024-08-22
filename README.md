@@ -15,7 +15,7 @@ This repository is created to store different trained model and their results of
 ```
 
 
-## Model Details and Navigation
+## Model Details and Navigation (Without XGBoost)
 
 1. For Close Feature
 
