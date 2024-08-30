@@ -64,4 +64,13 @@ print("Best Hyperparameters:", best_params)
 # Use the best model to make predictions
 best_model = grid_search.best_estimator_
 y_pred = best_model.predict(lstm_features_test)
+
 ```
+
+
+![flowchart drawio](https://github.com/user-attachments/assets/816ab62e-ad4b-47e6-9ee4-b3804e48d386)
+
+![xg_boost](https://github.com/user-attachments/assets/b65ebde0-a5a0-4546-913f-45aa65815cd9)
+
+
+
