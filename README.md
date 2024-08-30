@@ -35,7 +35,11 @@ This repository is created to store different trained model and their results of
 |<a href="/5 year Model/Open Feature/125/5Model_18_23_125_open.ipynb">Epoch 125 </a> |   <a href="/8 year Model/Open Feature/125/8Model_15_23_125_open.ipynb">Epoch 125 </a>    |    <a href="/10 year Model/Open Feature/125/10Model_13_23_125_open.ipynb">Epoch 125 </a>       |
 |<a href="/5 year Model/Open Feature/150/5Model_18_23_150_open.ipynb">Epoch 150 </a> |  <a href="/8 year Model/Open Feature/150/8Model_15_23_150_open.ipynb">Epoch 150 </a>     |    <a href="/10 year Model/Open Feature/150/10Model_13_23_150_open.ipynb">Epoch 150 </a> |
 
+XG Boost can be used as a standalone model, its strength lies in its ability to combine multiple weak models (decision trees) into a stronger ensemble. XGBoost uses a gradient boosting framework, where each subsequent tree is trained to correct the errors of the previous trees, leading to improved overall performance.
 
+## Grid Search CV
+
+Grid Search CV is a popular hyperparameter tuning technique used in machine learning to find the optimal combination of hyperparameters for a given model. In XGBoost, a gradient boosting algorithm, Grid Search CV is particularly valuable due to the numerous hyperparameters that can significantly impact the model's performance.   
 
 ```py
 from sklearn.model_selection import GridSearchCV
